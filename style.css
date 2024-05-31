@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* Root Color */
+:root {
+    ---red: #ff0000;
+    ---blue: #5A4E8C;
+    ---cream: #F3EAD8;
+    ---white: #fff;
+    ---black: #000;
+}
+
+/* Raw */
+.raw {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Column one */
+.column-one {
+    width: 100%;
+    padding: 40px 3%;
+}
+
+/* Column two */
+.column-two {
+    width: 50%;
+    padding: 40px 3%;
+}
+
+/* Column three */
+.column-three {
+    width: 33.33%;
+}
+
+.column-seventh{
+    width: 75%;
+}
+
+/* Column four */
+.column-four {
+    width: 25%;
+    overflow: hidden;
+}
+
+/* Column five */
+.column-five {
+    width: 20%;
+}
+
+/* Column six */
+.column-six {
+    width: 16.66%;
+}
+
+.secbgclr{
+    background: var(---cream);
+}
+
+header {
+    width: 100%;
+    background: var(---cream);
+    padding: 10px 3%;
+    position: fixed;
+    z-index: 1;
+}
+
+.headersec {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 15%;
+    display: flex;
+    padding: 10px;
+}
+
+.navsearch {
+    width: 25%;
+    display: flex;
+    padding: 10px;
+}
+
+.navsearch input {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 2px solid #d4d4d4;
+    padding: 10px;
+    border-right: none;
+    border-left: none;
+}
+
+.navsearch button {
+    height: 50px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 2px solid #d4d4d4;
+    border-right: none;
+    border-left: none;
+    background: var(---blue);
+    color: var(---cream);
+}
+
+.navmenu {
+    width: 50%;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    display: flex;
+    padding: 10px;
+}
+
+nav {
+    height: 50px;
+    background: #f1f1f1;
+    width: 100%;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    width: 100px;
+}
+
+nav ul li:hover {
+    color: var(---blue);
+    font-weight: 800;
+    animation-delay: 2s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(---black);
+}
+
+.navbtn {
+    width: 10%;
+    display: flex;
+    padding: 10px;
+}
+
+.navbtn button {
+    width: 100%;
+    background: var(---blue);
+    color: var(---white);
+    border: none;
+    border-radius: 10px;
+}
+
+section {
+    padding: 65px 6%;
+}
+
+.raw1bg {
+    color: var(---cream);
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Tower_Bridge_London_Feb_2006.jpg/1200px-Tower_Bridge_London_Feb_2006.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: center;
+    padding-top: 160px;
+}
+
+.frstclm {
+    background: #5a4e8ccf;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+.frstclm h1 {
+    font-size: 60px;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.frstclm p{
+    font-size: 17px;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+.bnnerinpt{
+    float: right;
+    margin-right: -143px;
+    transition: margin-right 4s;
+}
+.bnnerinpt:hover{
+    float: right;
+    margin-right: -243px;
+}
+
+.bnnerinpt input{
+    width: 490px;
+    height: 45px;
+    padding: 10px;
+    border: var(---blue);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.bnnerinpt button{
+    width: 100px;
+    height: 45px;
+    background:var(---blue);
+    color: var(---white);
+    border: 1px solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.column-two img{
+    height: 500px;
+    position: absolute;
+    padding-left: 100px;
+    animation-direction: reverse;
+}
+
+.column-two img {
+    animation: slideFromLeft 1s ease-out;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.title {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.tagline {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card{
+    background-color: var(---cream);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.card ul{
+    list-style: none;
+    padding-left: 0;
+    color: var(---red);
+}
+.card img{
+    width: 100%;
+}
+
+.card h2{
+    font-size: 20px;
+    color: var(---blue)
+}
+
+.imgbg{
+    width: 100%;
+}
+
+.clmnbg{
+    background: var(---white);
+    padding: 30px 70px;
+    display: grid;
+    align-content: center;
+}
+
+.clmnbg h3{
+    font-size: 25px;
+    color: var(---blue);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.clmnbg p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.clmnbg button{
+    width: 200px;
+    padding: 15px;
+    font-size: 18px;
+    background: var(---blue);
+    color:var(---white);
+    border: none;
+}
+
+.clmnbg button:hover{
+    color: var(---blue);
+    background: var(---cream);
+}
+
+@media screen and (max-width:600px){
+    .navsearch{
+        display: none;
+    }
+    .navbtn{
+        display: none;
+    }
+    .navmenu {
+        display: none;
+    }
+}
